@@ -1,9 +1,9 @@
 html {
-    background-color: #2e151b;
+    background-color: #2f4454;
     background-size: 30%;
     font-family: 'Poppins', sans-serif;
     color: white;
-  }
+}
 
 a {
     text-decoration: none;
@@ -21,24 +21,33 @@ a:hover {
     background-color: #1c3334;
     max-width: 985px;
     margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
-#myPic {
+#my-pic {
     max-width: 300px;
     width: 100%;
     float: right;
-    border: 5px solid white;
+    border: 5px solid rgb(194, 229, 252);
     margin-right: 25px;
+    margin-top: -125px;
+    margin-bottom: 100px;
+    border-radius: 15px;
 }
 
 header {
-    text-align: center;
+    text-align: left;
     font-size: 150%;
     padding: 30px;
     color: white;
     background-color: #2f4454;
     border: 5px double white;
     border-radius: 15px;
+}
+
+header h1 {
+    margin-left: 100px;
 }
 
 footer {
@@ -55,15 +64,34 @@ footer a {
 }
 
 .date {
-    color: #ffa2b9;
+    color: #c6ec04;
+    font-size: 0.9em;
 }
 
+.link-list li{
+    margin-bottom: 5px;
+}
+
+
+
 @media (max-width: 740px) {
+    html {
+        background-color: #1c3334;
+    }
+
     .content {
         display: block;
+        border: none;
+    }
+
+    header h1 {
+        margin-left: 0px;
     }
     
-    #myPic {
+    #my-pic {
+        max-width: 269px;
         float: none;
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 }
