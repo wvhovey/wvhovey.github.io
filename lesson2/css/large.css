@@ -1,0 +1,43 @@
+html {
+    font-size: 1.25em;
+}
+
+img {
+    width: 90%;
+    padding-top: 20px;
+}
+.content {
+    max-width: 1200px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section {
+    background-color: rgb(41, 41, 41);
+    display: block;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h1, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+h3 {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: #2f4454;
+    border: 5px double white;
+    border-radius: 15px;
+}
+
+

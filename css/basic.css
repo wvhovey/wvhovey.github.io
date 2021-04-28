@@ -1,0 +1,45 @@
+html {
+    background-color: #2f4454;
+    background-size: 30%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(235, 216, 53);
+}
+
+a:hover {
+    background-color: rgb(235, 216, 53);
+    color: black;
+}
+
+.content {
+    display: block;
+    padding: 40px;
+    background-color: #1c3334;
+    max-width: 985px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 15px;
+
+}
+
+header, footer {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: #2f4454;
+    border: 5px double white;
+    border-radius: 15px;
+}
+
+.date {
+    color: #c6ec04;
+    font-size: 0.9em;
+}
+
+p {
+    line-height: 25px;
+}

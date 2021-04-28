@@ -1,0 +1,60 @@
+@media only screen and (min-width: 32.5em) {
+
+    html {
+        background-color: #2f4454;
+    }
+    
+    .content {
+        display: block;
+        padding: 40px;
+        background-color: #1c3334;
+        max-width: 985px;
+        margin: 0 auto;
+        border: 3px solid white;
+        border-radius: 15px;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 500px;
+        text-align: left;
+        padding: 50px;
+        color: white;
+        background-color: #2f4454;
+        border: 5px double white;
+        border-radius: 15px;
+    }
+
+    footer {
+        padding: 30px;
+        text-align: center;
+        color: white;
+        background-color: #2f4454;
+        border: 5px double white;
+        border-radius: 15px;
+    }
+
+    header {
+        background-color: #1c3334;
+        border: none;
+        padding: 0px;
+    }
+
+    #my-pic {
+        max-width: 17rem;
+        width: 50%;
+        float: right;
+        border: 5px solid rgb(194, 229, 252);
+        margin-top: 5rem;
+        margin-right: 1em;
+        border-radius: 15px;
+    }
+
+    hr {
+        width:50%;
+        align-items:left;
+        margin-left:0
+    }
+}
