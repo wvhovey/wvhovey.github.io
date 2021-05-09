@@ -81,6 +81,30 @@ section {
     border: 2px solid white;
 }
 
+.h1-ex {
+    font-size: xx-large;
+    font-family: 'Merriweather', serif;
+    background-color: #2f4454;
+}
+
+.h2-ex {
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2f4454;
+}
+
+.h3-ex {
+    font-size: x-large;
+    font-family: 'Merriweather', serif;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: #2f4454;
+    border: 5px double white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 ol li {
     margin-bottom: 10px;
     line-height: 20px;

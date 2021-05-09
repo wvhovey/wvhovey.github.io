@@ -42,6 +42,10 @@
         padding: 0px;
     }
 
+    header h1 {
+        overflow: visible;
+    }
+
     #my-pic {
         max-width: 17rem;
         width: 50%;
