@@ -36,6 +36,7 @@ header, footer {
     color: white;
     background-color: #2f4454;
     border: 3px double white;
+    overflow: hidden;
 }
 
 header h1 {

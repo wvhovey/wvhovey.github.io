@@ -26,13 +26,19 @@ a:hover {
 
 }
 
-header, footer {
+header, footer, h3 {
     padding: 30px;
     text-align: center;
     color: white;
     background-color: #2f4454;
     border: 5px double white;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    background-color: #2f4454;
 }
 
 .date {
