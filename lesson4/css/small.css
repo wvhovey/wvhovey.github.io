@@ -1,0 +1,32 @@
+@media only screen and (max-width: 640px) {
+    .icon {
+        width: 50%;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+        padding-bottom: 10px;
+    }
+
+    .navigation li:last-child {
+        padding-bottom: 0px;
+    }
+
+    .navigation li a {
+        display: block;
+        text-align: center;
+    
+    }
+
+    .responsive li {
+        display: block;
+    }
+}

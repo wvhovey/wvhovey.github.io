@@ -1,0 +1,64 @@
+@media only screen and (max-width: 868px) {
+    main {
+        max-width: 985px;
+    }
+
+    .icon {
+        width: 40%;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero-txt {
+        color: white;
+        background-color: rgb(41, 41, 41);
+        position: static;
+        padding: 20px;
+    }
+
+    .forecast {
+        width: 100%;
+    }
+
+    .article-img1 {
+        width: 0%;
+        padding: 0px;
+    }
+
+    .article-img2 {
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        text-align: left;
+        margin: 40px;
+    }
+
+    .contact-info li {
+        text-align: left;
+    }
+
+    .map-img1 {
+        width: 0%;
+        padding: 0px;
+    }
+
+    .map-img2 {
+        width: 100%;
+    }
+
+    .social-img {
+        width: 0%;
+    }
+
+    .date {
+        font-size: 1.2em;
+    }
+
+}

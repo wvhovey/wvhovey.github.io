@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Weather Site Plan | Hovey | WDD 230</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 3 Assignment index page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap">
+    <link rel="stylesheet" href="../css/basic.css">   
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+</head>
+<body>
+    <div class="content">
+
+        <header>
+            <img src="images/Icon.png" alt="Stormy Horizons Icon" class="icon">
+            <div class="heading">
+                <h1>Stormy Horizons</h1>
+                <h4>Motto/Catch Phrase</h4>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-4.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            
+            <section class="hero">
+                <h3>Preston Idaho</h3>
+                <img src="images/rectangle.png" alt="Hero Image" class="hero-img">
+                <p class="hero-txt"><strong>Weather Summary</strong> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla. </p>
+            </section>
+
+            <section class="forecast">
+                <h3>Five Day Forecast</h3>
+                <img src="images/square.png" alt="Forecast Image" class="forecast-img">
+                <img src="images/square.png" alt="Forecast Image" class="forecast-img">
+                <img src="images/square.png" alt="Forecast Image" class="forecast-img">
+                <img src="images/square.png" alt="Forecast Image" class="forecast-img">
+                <img src="images/square.png" alt="Forecast Image" class="forecast-img5">
+            </section>
+
+            <section class="article">
+                <h3>Article Title</h3>
+                <img src="images/rectangle.png" alt="Article Image" class="article-img1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="images/rectangle.png" alt="Article Image" class="article-img2">
+            </section>
+
+        </main>
+
+        <footer>
+            <img src="images/square.png" alt="Map Image" class="map-img1">
+
+
+            <h2>Contact information</h2>
+            <ul class="contact-info">
+                <li>000-000-0000</li>
+                <li>1234 Place Way</li>
+                <li>Preston Idaho, 83263</li>
+            </ul>
+
+            <a href="https://www.facebook.com/"  target="blank"><img src="images/square.png" alt="Facebook Link"  class="social-img"></a>
+            <a href="https://www.instagram.com/" target="blank"><img src="images/square.png" alt="Twitter Link"   class="social-img"></a>
+            <a href="https://twitter.com/"       target="blank"><img src="images/square.png" alt="Instagram Link" class="social-img"></a>
+
+            <img src="images/rectangle.png" alt="Map Image" class="map-img2">
+
+            <p class="date">Last Updated: <span id='current-date'><script src="js/date.js"></script></span></p>
+
+            
+            <script src="js/menu.js"></script>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
