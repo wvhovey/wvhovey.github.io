@@ -82,11 +82,12 @@ nav {
 }
 
 .hero-txt {
-    color: black;
+    color: white;
+    background-color: rgb(41, 41, 41);
     grid-column: 1/2;
     grid-row: 2/3;
     margin: 20px;
-    background-color: #c6ec04;
+    padding: 20px;
 }
   
 .forecast {

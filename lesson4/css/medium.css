@@ -12,10 +12,7 @@
     }
 
     .hero-txt {
-        color: white;
-        background-color: rgb(41, 41, 41);
         position: static;
-        padding: 20px;
         margin-top: 16px;
         margin-bottom: 16px;
     }
