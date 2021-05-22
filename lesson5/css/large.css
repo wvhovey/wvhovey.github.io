@@ -1,0 +1,193 @@
+.content {
+    max-width: none;
+    border: none;
+    padding: 0px;
+}
+
+header {
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.heading {
+    text-align: left;
+}
+
+main {
+    max-width: 985px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 985px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 20%;
+}
+
+.motto {
+    font-size: 100%;
+}
+
+nav {
+	background-color: rgb(41, 41, 41);
+	text-align: center;
+	box-shadow: 3px 3px 5px gray;
+    margin-top: 5px;
+    overflow: auto;
+}
+.navigation {
+    display: flex;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.navigation li a {
+	font-size: 1.25rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navigation li:hover {
+    background-color: rgb(235, 216, 53);
+    color: black;
+}
+
+.current-page {
+    background-color: rgb(235, 216, 53);
+}
+
+.current-page a {
+    color: rgb(41, 41, 41);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero h3 {
+    font-size: 200%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.hero-img {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.hero-txt {
+    color: white;
+    background-color: rgba(41, 41, 41, 0.829);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 20px;
+    padding: 20px;
+}
+  
+.forecast {
+    background-color: rgb(41, 41, 41);
+    border-radius: 15px;
+}
+
+.forecast-img {
+    width: 10%;
+    padding: 20px;
+    padding-right: 8%;
+}
+
+.forecast-img5 {
+    width: 10%;
+    padding: 20px;
+}
+
+.article {
+    background-color: rgb(41, 41, 41);
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.article p {
+    padding: 20px;
+}
+
+.article-img1 {
+    width: 30%;
+    float: right;
+    padding: 20px;
+}
+
+.article-img2 {
+    width: 0%;
+}
+
+.map-img1 {
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+
+.map-img2 {
+    width: 0%;
+}
+
+.contact-info {
+    padding-left: 0px;
+}
+
+.contact-info li {
+    list-style: none;
+    text-align: center;
+}
+
+.social-img {
+    width: 10%;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+.fri-msg {
+    background-color: #1c3334;
+    color:#c6ec04;
+    margin: 0;
+    padding: 20px;
+    font-size: x-large;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+.sun-icon {
+    width: 50%;
+}
+
+.social:hover {
+    background-color: #1c3334;
+}
+

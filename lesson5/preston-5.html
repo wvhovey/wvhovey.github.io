@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Weather Site Plan | Hovey | WDD 230</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 3 Assignment index page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap">
+    <link rel="stylesheet" href="../css/basic.css">   
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+</head>
+<body>
+    <div class="content">
+        <p class="fri-msg"> <span id='friday'><script src="js/friday.js"></script></span></p>
+
+        <header>
+            <img src="images/Icon.png" alt="Stormy Horizons Icon" class="icon">
+            <div class="heading">
+                <h1>Stormy Horizons</h1>
+                <h2 class="motto">Motto/Catch Phrase</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="current-page"><a href="preston-4.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            
+            <section class="hero">
+                <h3>Preston Idaho</h3>
+                <img src="images/hero-img.jpg" alt="The image for hero section" class="hero-img">
+                <p class="hero-txt"><strong>Weather Summary</strong><br>Currently: Sunny<br>High: 76°F<br>Wind Chill: 0°F<br>Humidity: 100%<br>Wind Speed: 10000 mph</p>
+            </section>
+
+            <section class="forecast">
+                <h3>Five Day Forecast</h3>
+                <table style="width:100%">
+                    <tr>
+                      <th>Mon</th>
+                      <th>Tue</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td><img class="sun-icon" src="images/sunny.png" alt="Forecast image for current date"></td>
+                        <td><img class="sun-icon" src="images/sunny.png" alt="The forecast image for tomorrow's date"></td>
+                        <td><img class="sun-icon" src="images/sunny.png" alt="The day after tomorrow's forecast"></td>
+                        <td><img class="sun-icon" src="images/sunny.png" alt="4th day of the week's forecast "></td>
+                        <td><img class="sun-icon" src="images/sunny.png" alt="5th day forcast"></td>
+                    </tr>
+                    <tr>
+                        <td>10000°F</td>
+                        <td>2121°F</td>
+                        <td>1°F</td>
+                        <td>-23°F</td>
+                        <td>-110101°F</td>
+                      </tr>
+
+                  </table>
+            </section>
+
+            <section class="article">
+                <h3>New Rise to Tech Companies</h3>
+                <img src="images/article-img.jpg" alt="The larger image for the article section" class="article-img1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="images/article-img.jpg" alt="The smaller image for the article section" class="article-img2">
+            </section>
+
+        </main>
+
+        <footer>
+            <img src="images/map.png" alt="Preston Idaho Map" class="map-img1">
+
+
+            <h2>Contact information</h2>
+            <ul class="contact-info">
+                <li>&#9742; 000-000-0000</li>
+                <li>&#9737; 1234 Place Way</li>
+                <li>Preston Idaho, 83263</li>
+            </ul>
+
+            <a class="social" href="https://facebook.com/"      target="blank"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FFacebook%20Icon.png?v=1611762375483"  alt="Facebook Link"></a>
+            <a class="social" href="https://www.instagram.com/" target="blank"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FInstagram%20Icon.png?v=1611762381639" alt="YouTube Link"></a>
+            <a class="social" href="https://twitter.com/"       target="blank"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
+
+            <img src="images/map.png" alt="Preston Idaho map" class="map-img2">
+
+            <h2 class="date">Current Date: <span id='current-date'><script src="js/date.js"></script></span></h2>
+
+            
+            <script src="js/menu.js"></script>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
