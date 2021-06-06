@@ -35,11 +35,11 @@
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                     <li><a href="#">Home</a></li>
-                    <li class="current-page"><a href="preston-6.html">Preston</a></li>
+                    <li><a href="/lesson6/preston-6.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
-                    <li><a href="/lesson7/gallery.html">Gallery</a></li>
+                    <li class="current-page"><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
 
@@ -47,73 +47,87 @@
             <main>
                 
                 <!--Hero Section-->
-                <section class="hero">
-                    <h3>Preston Idaho</h3>
-                    <picture class="hero-img">
-                        <source media="(max-width: 640px)" srcset="images/hero-img-small.jpg" />
-                        <source media="(max-width: 860px)" srcset="images/hero-img-medium.jpg" />
-                        <img src="images/hero-img-large1.jpg" alt="The image for hero section" />
-                    </picture>
+                <h3>Gallery</h3>
+                <p class="date">Days since last visit: <span id="last-date"></span></p>
+                    <!-- Test Lines for 'last-date'
+                    <p><span id="test1"></span></p>
+                    <p><span id="test2"></span></p>
+                    -->
+                <div class="gallery">
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/foggy.jpg" alt="Gallery placeholder">
+                        </picture>
+                        <p>Foggy</p>
+                    </div>  
                     
-                    <div class="hero-txt">
-                        <p><strong>Weather Summary</strong></p>
-                        <hr>
-                        <p>Currently: Sunny</p>
-                        <p><label for="temp">High: </label><input id="temp" value="32"><span id="temp-text"></span>°F</p>
-                        <p>Wind Chill: <span id="wind-chill"></span>°F</p>
-                        <p>Humidity: 100%</p>
-                        <p><label for="wind-speed">Wind Speed: </label><input id="wind-speed" value="10"><span id="speed-text"></span> mph</p>
-                        
-                    
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/clear.jpg" alt="Placeholder image 300 wide by 400 high">
+                        </picture>
+                        <p>Clear Skies</p>
                     </div>
-                </section>
 
-                <!--Forecast Section-->
-                <section class="forecast">
-                    <h3>Five Day Forecast</h3>
-                    <table style="width:100%">
-                        <tr>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        </tr>
-                        <tr>
-                            <td><img class="sun-icon" src="images/sunny.png" alt="Forecast image for current date"></td>
-                            <td><img class="sun-icon" src="images/sunny.png" alt="The forecast image for tomorrow's date"></td>
-                            <td><img class="sun-icon" src="images/sunny.png" alt="The day after tomorrow's forecast"></td>
-                            <td><img class="sun-icon" src="images/sunny.png" alt="4th day of the week's forecast "></td>
-                            <td><img class="sun-icon" src="images/sunny.png" alt="5th day forcast"></td>
-                        </tr>
-                        <tr>
-                            <td>10000°F</td>
-                            <td>2121°F</td>
-                            <td>1°F</td>
-                            <td>-23°F</td>
-                            <td>-110101°F</td>
-                        </tr>
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/cloudy.jpg" alt="Placholder image for gallery">
+                        </picture>
+                        <p>Cloudy Skies</p>
+                    </div>
 
-                    </table>
-                </section>
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/cold.jpg" alt="Placeholder pictures for gallery">
+                        </picture>
+                        <p>Cold</p>
+                    </div>
 
-                <!--Article Section-->
-                <section class="article">
-                    <h3>New Rise to Tech Companies</h3>
-                    <img src="images/article-img.jpg" alt="The larger image for the article section" class="article-img1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <img src="images/article-img.jpg" alt="The smaller image for the article section" class="article-img2">
-                </section>
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/lightning.jpg" alt="Placeholder">
+                        </picture>
+                        <p>Lightning</p>
+                    </div>
 
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/rainy.jpg" alt="Gallery placeholder">
+                        </picture>
+                        <p>Rainy</p>
+                    </div>
 
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/snowy.jpg" alt="Placeholder pictures for gallery">
+                        </picture>
+                        <p>Snowy</p>
+                    </div>
+
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/windy.jpg" alt="Placeholder">
+                        </picture>
+                        <p>Windy</p>
+                    </div>
+
+                    <div>
+                        <picture>
+                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/tornado.jpg" alt="Gallery placeholder">
+                        </picture>
+                        <p>Tornado</p>
+                    </div>
+
+                    
+                    
+                </div>
+
+             
             </main>
 
 
             <!--Footer-->
             <footer>
 
-
-                <img src="images/map.png" alt="Preston Idaho Map" class="map-img1">
 
                 <h2>Contact information</h2>
                 <ul class="contact-info">
@@ -128,7 +142,6 @@
                     <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
                 </div>
 
-                <img src="images/map.png" alt="Preston Idaho map" class="map-img2">
 
                 <h2 class="date">Current Date: <span id='current-date'></span></h2>
                 <div class="final-text">
@@ -139,6 +152,7 @@
                         <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a>
                     </p>
                     <p class="date">Last Updated: <span id='last-updated'></span></p>
+
                 </div>
                 
 
@@ -155,6 +169,9 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
             <script src="js/fonts.js"></script>        <!--Choosing fonts from the above reference-->
+            <script src="js/lazyload.js"></script>
+            <script src="js/localStorage.js"></script>
+            
         </div>
     </body>
 
