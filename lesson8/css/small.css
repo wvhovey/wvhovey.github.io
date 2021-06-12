@@ -1,0 +1,56 @@
+@media only screen and (max-width: 640px) {
+    header{ 
+        display: block;
+    }
+    header h2, header h1 {
+        text-align: center;
+    }
+
+    .icon {
+        width: 50%;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+        padding: 5px;
+    }
+
+
+    .navigation li a {
+        display: block;
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .forecast {
+        display:none;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+
+    .gallery picture img, .gallery p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+
+}

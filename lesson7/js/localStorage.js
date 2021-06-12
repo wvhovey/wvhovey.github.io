@@ -49,7 +49,7 @@ function setDate() {
     // document.getElementById('test1').textContent = current_date
 
     // Use getDifferenceOfDays to calculate the difference between these two dates and write it to the 'last-date' element
-    document.getElementById('last-date').textContent = getDifferenceOfDays(current_date, last_visited)
+    document.getElementById('last-date').textContent = getDifferenceOfDays(last_visited, current_date)
   
     // Reset the local storage to the current time for future use as last_visited
     localStorage.setItem('date', new Date());
