@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Site Home Page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/basic.css">   
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+</head>
+<!--Body-->
+<body>
+    <div class="content">
+        <p class="fri-msg"> <span id='friday'></span></p>
+
+        <!--Header-->
+        <header>
+            <img src="images/Icon.png" alt="Stormy Horizons Icon" class="icon">
+            <div class="heading">
+                <h1>Stormy Horizons</h1>
+                <h2 class="motto">Whether stormy or sunny, let us bring you the horizon!</h2>
+            </div>
+        </header>
+
+        <!--Nav-->
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li class="current-page"><a href="#">Home</a></li>
+                <li><a href="/lesson6/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson7/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <!--Main-->
+        <main>
+            
+            <!--Hero Section-->
+            <section class="hero">
+                <h3>Home</h3>
+                <picture class="hero-img">
+                    <source media="(max-width: 640px)" srcset="images/hero-img-small.jpg" />
+                    <source media="(max-width: 860px)" srcset="images/hero-img-medium.jpg" />
+                    <img src="images/hero-img-large.jpg" alt="The image for hero section" />
+                </picture>
+                
+
+            </section>
+
+            <!--Town Card Section-->
+            <div class="town-cards">
+
+            </div>
+
+            <!--Event Section-->
+            <section class="events">
+
+                <h3>Upcoming Events</h3>
+                <div class="event">
+                    <h4>Preston</h4>
+                    <p>July 8-12: Napoleon Dynamite Festival</p>      
+                </div>
+
+                <div class="event">
+                    <h4>Soda Springs</h4>
+                    <p>July 29: Geyser Song Day</p>
+                </div>
+                <div class="event">
+                    <h4>Fish Haven</h4>
+                    <p>July 24: Bear Lake Blunder Run</p>
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!--Footer-->
+        <footer>
+
+
+            <img src="images/map.png" alt="Preston Idaho Map" class="map-img1">
+
+            <h2>Contact information</h2>
+            <ul class="contact-info">
+                <li>&#9742; 000-000-0000</li>
+                <li>&#9737; 1234 Place Way</li>
+                <li>Preston Idaho, 83263</li>
+            </ul>
+
+            <div class="social-media">
+                <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FFacebook%20Icon.png?v=1611762375483"  alt="Facebook Link"></a>
+                <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FInstagram%20Icon.png?v=1611762381639" alt="YouTube Link"></a>
+                <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
+            </div>
+
+            <img src="images/map.png" alt="Preston Idaho map" class="map-img2">
+
+            <h2 class="date">Current Date: <span id='current-date'></span></h2>
+            <div class="final-text">
+                <p>
+                    &copy; <span id='current-year'></span> | 
+                    W. Vaughan Hovey | 
+                    Massachusetts |
+                    <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a>
+                </p>
+                <p class="date">Last Updated: <span id='last-updated'></span></p>
+            </div>
+            
+
+        </footer>
+
+    </div>
+    <!--JavaScript References-->
+    <div class="javascript-references">
+        <script src="js/friday.js"></script>       <!--Displays message above header only on Fridays-->
+        <script src="js/menu.js"></script>         <!--Dynamic hamburger menu in small viewport-->
+        <script src="js/current-date.js"></script> <!--Displays the current date in the footer-->
+        <script src="js/date.js"></script>         <!--Displays when the site was last edited-->
+        <script src="js/town-data.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
+        <script src="js/fonts.js"></script>        <!--Choosing fonts from the above reference-->
+    </div>
+</body>
+</html>
