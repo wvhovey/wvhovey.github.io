@@ -60,11 +60,10 @@ nav {
 .navigation li {
     display: block;
     flex: 1 1 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
 
 }
 .navigation li a {
+    display: block;
 	font-size: 100%;
     padding: 20px;
 }
@@ -114,6 +113,7 @@ main {
     padding: 20px;
     height: fit-content;
     width: fit-content;
+    z-index: 1;
 }
 
 .hero-txt p {
@@ -290,6 +290,69 @@ form label.top input:required:valid {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*----------- Main - Home Page --------------*/
+
+.town-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.town-cards section, .events {
+    background-color: rgb(41, 41, 41);  
+    border: 1px solid white;
+    border-radius: 15px;
+
+}
+
+.town-cards section h3, .events h3 {
+    margin-top: 0px;
+}
+
+.town-cards section p, .town-cards section h4 {
+    text-align: center;
+}
+
+section.town-card0 {
+    order: 2;
+}
+
+section.town-card2 {
+    order: 3;
+}
+
+section.town-card6 {
+    order: 1;
+}
+
+.town-cards section img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.town-cards section h4 {
+    height: 5%;
+}
+
+.events {
+    margin-top: 40px;
+}
+
+.event {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.event h4 {
+    margin-bottom: 0px;
+}
+
+.event p {
+    margin-top: 0px;
 }
 
 

@@ -88,4 +88,30 @@
         max-width: 50%;
     }
 
+    .town-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .town-cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .town-card6 p, .town-card2 p, .town-card6 h4, .town-card2 h4 {
+        grid-column: 1/2;
+    }
+
+    .town-card6 img, .town-card2 img {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+
+    .town-card0 img {
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+
+    .town-card0 p, .town-card0 h4, .town-card0 h3 {
+        grid-column: 2/3;
+    }
 }

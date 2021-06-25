@@ -6,7 +6,7 @@
         <title>Weather Site Plan | Hovey | WDD 230</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Lesson 3 Assignment index page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <meta name="description" content="Week 10 Assignment Preston-10 for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 
 
         <link rel="stylesheet" href="../css/normalize.css">
@@ -35,11 +35,11 @@
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                     <li><a href="/lesson9/index.html">Home</a></li>
-                    <li><a href="/lesson10/preston-10.html">Preston</a></li>
+                    <li class="current-page"><a href="preston-10.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
-                    <li class="current-page"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="/lesson7/gallery.html">Gallery</a></li>
                 </ul>
             </nav>
 
@@ -47,87 +47,73 @@
             <main>
                 
                 <!--Hero Section-->
-                <h3>Gallery</h3>
-                <p class="date">Days since last visit: <span id="last-date"></span></p>
-                    <!-- Test Lines for 'last-date'
-                    <p><span id="test1"></span></p>
-                    <p><span id="test2"></span></p>
-                    -->
-                <div class="gallery">
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/foggy.jpg" alt="Gallery placeholder">
-                        </picture>
-                        <p>Foggy</p>
-                    </div>  
+                <section class="hero">
+                    <h3>Preston Idaho</h3>
+                    <picture class="hero-img">
+                        <source media="(max-width: 640px)" srcset="images/hero-img-small.jpg" />
+                        <source media="(max-width: 860px)" srcset="images/hero-img-medium.jpg" />
+                        <img src="images/hero-img-large.jpg" alt="The image for hero section" />
+                    </picture>
                     
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/clear.jpg" alt="Placeholder image 300 wide by 400 high">
-                        </picture>
-                        <p>Clear Skies</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/cloudy.jpg" alt="Placholder image for gallery">
-                        </picture>
-                        <p>Cloudy Skies</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/cold.jpg" alt="Placeholder pictures for gallery">
-                        </picture>
-                        <p>Cold</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/lightning.jpg" alt="Placeholder">
-                        </picture>
-                        <p>Lightning</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/rainy.jpg" alt="Gallery placeholder">
-                        </picture>
-                        <p>Rainy</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/snowy.jpg" alt="Placeholder pictures for gallery">
-                        </picture>
-                        <p>Snowy</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/windy.jpg" alt="Placeholder">
-                        </picture>
-                        <p>Windy</p>
-                    </div>
-
-                    <div>
-                        <picture>
-                            <img class="pic-shadow" src="images/placeholder.png" data-src="images/tornado.jpg" alt="Gallery placeholder">
-                        </picture>
-                        <p>Tornado</p>
-                    </div>
-
+                    <div class="hero-txt">
+                        <p><strong>Weather Summary</strong></p>
+                        <hr>
+                        <p>Currently: <span id="currently"></span></p>
+                        <p>High: <span id="temp"></span> °F</p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                        
                     
-                    
-                </div>
+                    </div>
+                </section>
 
-             
+                <!--Forecast Section-->
+                <section class="forecast">
+                    <h3>Five Day Forecast</h3>
+                    <table style="width:100%">
+                        <tbody id="forecast-table">
+                            <tr>
+                                <th><span id="weekday1"></span></th>
+                                <th><span id="weekday2"></span></th>
+                                <th><span id="weekday3"></span></th>
+                                <th><span id="weekday4"></span></th>
+                                <th><span id="weekday5"></span></th>
+                                </tr>
+        
+                                <tr id="forecast-temps">
+                                    <td><span id="forecast-temp1"></span> °F</td>
+                                    <td><span id="forecast-temp2"></span> °F</td>
+                                    <td><span id="forecast-temp3"></span> °F</td>
+                                    <td><span id="forecast-temp4"></span> °F</td>
+                                    <td><span id="forecast-temp5"></span> °F</td>
+                                </tr>
+                        </tbody>
+
+                    </table>
+                </section>
+
+                <!--Article Section-->
+                <section class="article">
+                    <h3>New Rise to Tech Companies</h3>
+                    <img src="images/article-img.jpg" alt="The larger image for the article section" class="article-img1">
+                    <p>With the sudden rise to tech companies in the Preston Area, housing developments, restaurants and businesses are on the rise.
+                        The increase of jobs has prompted massive migration which has increased the population of Preston by 15% in just the last year!
+                        With more demand for food and other businesses, restaurants have grown in number, size, and variety. As the dynamic of Preston
+                        only seems to be getting better, we only have one thing to say, "The more the merrier!"
+                    </p>
+                    <img src="images/article-img.jpg" alt="The smaller image for the article section" class="article-img2">
+                </section>
+
+
             </main>
 
 
             <!--Footer-->
             <footer>
 
+
+                <img src="images/map.png" alt="Preston Idaho Map" class="map-img1">
 
                 <h2>Contact information</h2>
                 <ul class="contact-info">
@@ -142,6 +128,7 @@
                     <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
                 </div>
 
+                <img src="images/map.png" alt="Preston Idaho map" class="map-img2">
 
                 <h2 class="date">Current Date: <span id='current-date'></span></h2>
                 <div class="final-text">
@@ -152,7 +139,6 @@
                         <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a>
                     </p>
                     <p class="date">Last Updated: <span id='last-updated'></span></p>
-
                 </div>
                 
 
@@ -163,14 +149,13 @@
         <div class="javascript-references">
             <script src="js/friday.js"></script>       <!--Displays message above header only on Fridays-->
             <script src="js/menu.js"></script>         <!--Dynamic hamburger menu in small viewport-->
+            <script src="js/weatherapi.js"></script>
             <script src="js/current-date.js"></script> <!--Displays the current date in the footer-->
             <script src="js/date.js"></script>         <!--Displays when the site was last edited-->
+            
 
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
             <script src="js/fonts.js"></script>        <!--Choosing fonts from the above reference-->
-            <script src="js/lazyload.js"></script>
-            <script src="js/localStorage.js"></script>
-            
         </div>
     </body>
 
