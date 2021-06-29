@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <!--Head-->
+    <head>
+        <title>Storm Center</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="StormCenter page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/basic.css">   
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/small.css">
+    </head>
+
+    <!--Body-->
+    <body>
+        <div class="content">
+            <p class="fri-msg"> <span id='friday'></span></p>
+
+            <!--Header-->
+            <header>
+                <img src="images/Icon.png" alt="Stormy Horizons Icon" class="icon">
+                <div class="heading">
+                    <h1>Stormy Horizons</h1>
+                    <h2 class="motto">Whether stormy or sunny, let us bring you the horizon!</h2>
+                </div>
+            </header>
+
+            <!--Nav-->
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li class="current-page"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <!--Main-->
+            <main>
+                <h3>Storm Center</h3>
+               
+                <form  method="get" action="thanks.html">
+
+                    <fieldset>
+                        <legend><h3>Weather Report</h3></legend>
+
+                        <div class="form-container">
+                            <label class="top">Full Name<input  type="text"       name="full-name" placeholder="First Name"        minlength="5" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
+                            <label class="top">Email<input      type="email"      name="email"     placeholder="someone@gmail.com" required></label>
+                            <label class="top">Phone<input      type="tel"        name="phone"     placeholder="1234567890"        required></label>
+                            <label class="top">Zip Code<input   type="number"     name="zip-code"  placeholder="12345"             required></label>
+                            <label class="top">Storm Date<input type="date"       name="complete"></label>
+                            <label class="top">Storm Type<input list="storm-type" name="storm-type"></label>
+
+                            <label class="top" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
+                                <input type="range" name="danger-lvl" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                <span id="ratingvalue">5</span>
+                            </label>
+
+                            <label class="top">Storm Region
+                                <select name="subject">
+                                    <option value="" selected disabled>Please Select</option>
+                                    <option value="preston"           >Preston</option>
+                                    <option value="soda-springs"      >Soda Springs</option>
+                                    <option value="fish-haven"        >Fish Haven</option>
+                                </select>
+                            </label>
+
+                            <div>User In-Danger Level</div>
+                            <label class="sbs"><input type="radio" name="danger" value="yes"  > Yes</label>
+                            <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                            <label class="sbs"><input type="radio" name="danger" value="no"   > No</label>
+                            <label class="top">Additional Information or Comments<textarea name="comments" rows="10" placeholder="Insert Comments Here"></textarea></label>
+
+
+                            <input type="submit" value="Send Weather Report" name="submitBtn" class="submitBtn">
+
+                        </div>
+
+                        <!--Datalists-->
+
+                        <datalist id="storm-type">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                        
+                    </fieldset>
+                
+        
+                </form>
+
+            </main>
+
+
+            <!--Footer-->
+            <footer>
+
+
+                <img src="images/map.png" alt="Preston Idaho Map" class="map-img1">
+
+                <h2>Contact information</h2>
+                <ul class="contact-info">
+                    <li>&#9742; 000-000-0000</li>
+                    <li>&#9737; 1234 Place Way</li>
+                    <li>Preston Idaho, 83263</li>
+                </ul>
+
+                <div class="social-media">
+                    <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FFacebook%20Icon.png?v=1611762375483"  alt="Facebook Link"></a>
+                    <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FInstagram%20Icon.png?v=1611762381639" alt="YouTube Link"></a>
+                    <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
+                </div>
+
+                <img src="images/map.png" alt="Preston Idaho map" class="map-img2">
+
+                <h2 class="date">Current Date: <span id='current-date'></span></h2>
+                <div class="final-text">
+                    <p>
+                        &copy; <span id='current-year'></span> | 
+                        W. Vaughan Hovey | 
+                        Massachusetts |
+                        <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a>
+                    </p>
+                    <p class="date">Last Updated: <span id='last-updated'></span></p>
+                </div>
+                
+
+            </footer>
+
+        </div>
+        <!--JavaScript References-->
+        <div class="javascript-references">
+            <script src="js/friday.js"></script>       <!--Displays message above header only on Fridays-->
+            <script src="js/menu.js"></script>         <!--Dynamic hamburger menu in small viewport-->
+            <script src="js/adjustRating.js"></script>
+            <script src="js/current-date.js"></script> <!--Displays the current date in the footer-->
+            <script src="js/date.js"></script>         <!--Displays when the site was last edited-->
+
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
+            <script src="js/fonts.js"></script>        <!--Choosing fonts from the above reference-->
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,117 @@
+@media only screen and (max-width: 860px) {
+    main {
+        max-width: 985px;
+    }
+
+    .icon {
+        width: 40%;
+    }
+
+    .navigation li a {
+        margin: 0;
+    }
+
+    .navigation li a {
+        font-size: .85em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .hero-txt {
+        background-color: rgb(41, 41, 41);
+        position: static;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: auto;
+    }
+
+    .forecast {
+        width: 100%;
+    }
+
+    .article-img1 {
+        width: 0%;
+        padding: 0px;
+    }
+
+    .article-img2 {
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        text-align: left;
+        margin: 40px;
+    }
+
+    .contact-info li {
+        text-align: left;
+    }
+
+    .map-img1 {
+        width: 0%;
+        padding: 0px;
+    }
+
+    .map-img2 {
+        width: 100%;
+    }
+
+    .social-img {
+        width: 0%;
+    }
+
+    .date {
+        font-size: 1.2em;
+    }
+
+    .final-text {
+        padding-top: 2%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pic-shadow:hover {
+        box-shadow: none;
+    }
+
+    .form-container {
+        max-width: 50%;
+    }
+
+    .town-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .town-cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .town-card6 p, .town-card2 p, .town-card6 h4, .town-card2 h4 {
+        grid-column: 1/2;
+    }
+
+    .town-card6 img, .town-card2 img {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+
+    .town-card0 img {
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+
+    .town-card0 p, .town-card0 h4, .town-card0 h3 {
+        grid-column: 2/3;
+    }
+}
