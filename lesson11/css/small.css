@@ -63,6 +63,9 @@
     .town-card6 img, .town-card2 img, .town-card0 img{
         grid-row: 6/7;
     }
-
+    
+    form input.submitBtn {
+        font-size: 50%;
+    }
 
 }
