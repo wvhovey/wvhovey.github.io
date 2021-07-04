@@ -85,7 +85,7 @@ main {
     font-size: 200%;
 }
 
-/*----------- Main - Preston Town Page --------------*/
+/*----------- Main - Town Pages --------------*/
 
 .hero {
     display: grid;
@@ -106,7 +106,10 @@ main {
 
 .hero-img img {
     width: 99%;
+    border: 1px solid yellowgreen;
+    border-radius: 20px;
 }
+
 
 .hero-txt {
     color: white;
@@ -118,6 +121,7 @@ main {
     height: fit-content;
     width: fit-content;
     z-index: 1;
+    border-radius: 10px;
 }
 
 .hero-txt p {
@@ -127,6 +131,12 @@ main {
 .forecast {
     background-color: rgb(41, 41, 41);
     border-radius: 15px;
+    border: 1px solid white;
+    margin-top: 32px;
+}
+
+.forecast h3, .article h3 {
+    margin-top: 0px;
 }
 
 .forecast-img {
@@ -153,6 +163,9 @@ th, td {
     background-color: rgb(41, 41, 41);
     margin-top: 20px;
     border-radius: 15px;
+    border: 1px solid white;
+    margin-top: 32px;
+
 }
 
 .article p {
@@ -171,6 +184,10 @@ th, td {
 
 input {
     display: none;
+}
+
+.event-list p {
+    padding: 20px
 }
 
 /*----------- Main - Gallery --------------*/
@@ -199,7 +216,7 @@ img {
 	transition: filter 0.5s;
 }
 
-.pic-shadow:hover {
+.pic-shadow:hover, .map-img1:hover, .map-img2:hover {
     -webkit-box-shadow: 0 0 10px #c6ec04;
     box-shadow: 0 0 10px #c6ec04;
 }
@@ -303,17 +320,17 @@ form label.top input:required:valid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    
+    margin-top: 32px;
 }
 
-.town-cards section, .events {
+.town-cards section, .events, .event-list {
     background-color: rgb(41, 41, 41);  
     border: 1px solid white;
     border-radius: 15px;
 
 }
 
-.town-cards section h3, .events h3 {
+.town-cards section h3, .events h3, .event-list h3 {
     margin-top: 0px;
 }
 
@@ -343,8 +360,8 @@ section.town-card6 {
     height: 5%;
 }
 
-.events {
-    margin-top: 40px;
+.events, .event-list {
+    margin-top: 32px;
 }
 
 .event {
@@ -396,8 +413,7 @@ footer {
 }
 
 .map-grid:hover, .map-grid2:hover {
-    background-color: red;
-
+    background-color: #2f4454;
 }
 
 .contact-info {
