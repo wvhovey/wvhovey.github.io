@@ -1,0 +1,54 @@
+{
+    "businesses": [
+
+        {
+            "name": "The Chicken and Rice Guys",
+            "contact": "Contact Info Here",
+            "logo": "images/chicken-rice-truck.jpg",
+            "link": "https://cnrguys.com/"
+        },
+
+        {
+            "name": "Cookie Monstah",
+            "contact": "Contact Info Here",
+            "logo": "images/cookie-monstah-truck.png",
+            "link": "https://www.thecookiemonstah.com/"
+        },
+
+        {
+            "name": "The Bacon Truck",
+            "contact": "Contact Info Here",
+            "logo": "images/bacon-truck.jpg",
+            "link": "https://www.bostonbacontruck.com/"
+        },
+
+        {
+            "name": "RiceBurg",
+            "contact": "Contact Info Here",
+            "logo": "images/riceburg-truck.jpg",
+            "link": "http://www.riceburg1.com/"
+        },
+
+        {
+            "name": "MoyZilla",
+            "contact": "Contact Info Here",
+            "logo": "images/moyzilla-truck.jpg",
+            "link": "https://www.moyzillaboston.com/"
+        },
+
+        {
+            "name": "Melt",
+            "contact": "Contact Info Here",
+            "logo": "images/melt-truck.jpg",
+            "link": "https://www.melttruckboston.com/"
+        },
+
+        {
+            "name": "Roxy's Grilled Cheese",
+            "contact": "Contact Info Here",
+            "logo": "images/roxys-truck.jpg",
+            "link": "https://www.roxysgrilledcheese.com/"
+        }
+
+    ]
+  }

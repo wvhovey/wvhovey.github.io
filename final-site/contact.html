@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/food-truck.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/small.css">
+
+        <title>Contact Us!</title>
+    </head>
+    <body>
+
+        <header>
+            <img class="icons" src="images/food-truck.png" alt="">
+            <h1>Boston's Booming Businesses</h1>
+            <img class="icons" src="images/food-truck-r.png" alt="">
+        </header>
+
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu </a></li>
+                <li><a href="index.html"    >Home</a></li>
+                <li><a href="city.html"     >Boston</a></li>
+                <li><a href="join.html"     >Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current-page"><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+            <h2 class="title">Contact Us</h2>
+
+            <h3>Contact Information</h3>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d94400.5950912955!2d-71.08941878384374!3d42.32080210665258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626716607274!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <form method="GET" action="thanks-contact.html">
+                <fieldset>
+                    <legend><h3>Send us an Email</h3></legend>
+
+                    <div class="form-container">
+                        <label for="first-name" class="form-ele">First Name<input        type="text"   name="first-name" placeholder="Type first name here" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
+                        <label for="last-name"  class="form-ele">Last Name<input         type="text"   name="last-name"  placeholder="Last Name" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
+                        <label for="phone"      class="form-ele">Cell Phone Number<input type="number" name="phone"      placeholder="000-000-0000"></label>
+                        <label for="email"      class="form-ele">Email<input             type="email"  name="email"      placeholder="someone@gmail.com" required></label>
+                        <label for="title"      class="form-ele">Subject<input           type="text"   name="subject"    placeholder="Type subject here"></label>
+                        <label for="comments"     class="form-area">Comments<textarea    rows="10"     name="comments"   placeholder="Comments"></textarea></label>
+
+
+                        <input type="submit" value="Send Email" name="submitBtn" class="submitBtn">
+        
+                    </div>
+                </fieldset>
+
+
+            </form>  
+
+            
+
+        </main>
+
+        <footer>
+            <h3>Contact Information:</h3>
+            <p>000-000-0000</p>
+            <p>somone@something.com</p>
+
+            <h3>Social Media</h3>
+            <div class="span-2">
+                <img src="images/sunny.png" alt="">
+                <img src="images/sunny.png" alt="">
+                <img src="images/sunny.png" alt="">
+                <img src="images/sunny.png" alt="">
+            </div>
+
+
+            <h3 class="purpose-h3">Chamber purpose and goals</h3>
+            <p class="purpose-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida porta tempus. 
+                Suspendisse quis leo velit. Proin est massa, ultricies sed purus non, hendrerit pulvinar elit. 
+                Etiam ac dictum ipsum. Praesent aliquam mauris eu quam consequat fringilla. Nunc velit sapien, 
+                ultrices et pellentesque at, laoreet vitae ante. Nullam et maximus urna, interdum finibus quam. 
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+
+        </footer>
+
+        <script src="js/toggle.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
+        <script>
+            WebFont.load({
+                google: {
+                families: [
+                    'Frank Ruhl Libre',
+                    'B612',
+                    'Archivo' 
+                ]
+                }
+            });
+        </script>
+    </body>
+</html>

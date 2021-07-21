@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/food-truck.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/small.css">
+
+        <title>Home</title>
+    </head>
+    <body>
+
+        <header>
+            <img class="icons" src="images/food-truck.png" alt="">
+            <h1>Boston's Booming Businesses</h1>
+            <img class="icons" src="images/food-truck-r.png" alt="">
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu </a></li>
+                <li class="current-page"><a href="index.html"    >Home</a></li>
+                <li><a href="city.html"     >Boston</a></li>
+                <li><a href="join.html"     >Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html"  >Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+            <h2 class="title">Home</h2>
+            <div id="alertBox">
+                <a href="#" onclick="hide(alertBox)">X</a>
+                <h2 class="alert"> !!!  
+                    <span id="weather-alert"></span> !!!
+                </h2>
+                <p class="alert"><span id="weather-alert-desc"></span></p>
+            </div>
+
+
+            <div class="home-content">
+
+                <div class="action-div">
+                    <img class="city-img" id="action-img" src="images/placeholder.png" data-src="images/boston-img-1.jpg" alt="">
+    
+                    <a class="action" href="join.html">Join Us!</a>
+                </div>
+    
+                <section class="main-sections" id="advertisement">
+                    <h3>Food Truck Spotlight!</h3>
+                    <p><strong>The Chicken and Rice Guys</strong> <br> Interested in something filling and savory to get you through rush hour? 
+                        Look no further than the Chicken and Rice Guys. Offering an array of falafel options with different types of meat and authentic greek sauces.
+                        You can try them today at the square by South Station and outside Tufts Medical Center!
+                    </p>
+                    <p><strong>Cookie Monstah</strong> <br> Maybe looking for something to squash your sweet tooth? Cookie Monstah may be the truck for you! 
+                        They offer a variety of homemade icecreams in cups, waffle cones, and most famously in between two delicious cookies! 
+                        You can find them every day from 12pm - 6pm at the Green Carousel near Faneuil Hall.
+                    </p>
+                    <p><strong>The Bacon Truck</strong> <br> BACON! Need we say more? Get anything and everything bacon related for a hearty, tasty breakfast! 
+                        These low prices combined with great food are a win for your taste buds and a win for your wallet. 
+                        Look for them at Brigham and Women's Hospital and near 71 Shattuck Street from 11am - 2pm.
+                    </p>
+                </section>
+
+    
+                <img class="city-img" src="images/placeholder.png" data-src="images/boston-img-2.jpg" alt="">
+    
+                <section class="main-sections">
+                    <h3>Summer Events</h3>
+                    <p><strong>What: </strong> Red Sox vs Yankees Game<br> <strong>When: </strong>Thursday, July 22 @ 7pm <br> <strong>Where:</strong> Fenway Park.
+                    </p>
+                    <p><strong>What: </strong> Guns N' Roses Concert <br> <strong>When: </strong>Tuesday, August 3 @ 5:30pm <br> <strong>Where:</strong> Fenway Park.
+                    </p>
+                    <p><strong>What: </strong> Summer of Play Carnival <br> <strong>When: </strong>Friday, July 30 @ 6pm - 9pm <br> <strong>Where:</strong> Boston Children's Museum.
+                    </p>
+                </section>
+
+    
+                <img class="city-img" id="home-img-3" src="images/placeholder.png" data-src="images/boston-img-3.jpg" alt="">
+    
+                <section class="main-sections" id="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="weather-div">
+                        <h4 class="summary">Current Weather</h4>
+                        <p> <strong>Temperature:</strong> <span id="current-temp"></span>&#176;F <br> 
+                            <strong>Description:</strong> <span id="current-desc"></span><br> 
+                            <strong>Humidity:</strong> <span id="current-humid"></span>%</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="forecast">3 Day Forecast</h4>
+                        <p><strong> <span id="weekday1"></span>:</strong> <span id="today-forecast"></span> <br> 
+                            <strong><span id="weekday2"></span>:</strong> <span id="tomorrow-forecast"></span> <br> 
+                            <strong><span id="weekday3"></span>:</strong> <span id="third-forecast"></span></p>
+                    </div>
+
+                    
+                </section>
+
+            </div>
+
+            
+
+        </main>
+
+        <footer>
+            <h3>Contact Information:</h3>
+            <p>000-000-0000</p>
+            <p>somone@something.com</p>
+
+            <h3>Social Media</h3>
+            <div class="span-2">
+                <img src="images/sunny.png" alt="">
+                <img src="images/sunny.png" alt="">
+                <img src="images/sunny.png" alt="">
+                <img src="images/sunny.png" alt="">
+            </div>
+
+
+            <h3 class="purpose-h3">Chamber purpose and goals</h3>
+            <p class="purpose-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida porta tempus. 
+                Suspendisse quis leo velit. Proin est massa, ultricies sed purus non, hendrerit pulvinar elit. 
+                Etiam ac dictum ipsum. Praesent aliquam mauris eu quam consequat fringilla. Nunc velit sapien, 
+                ultrices et pellentesque at, laoreet vitae ante. Nullam et maximus urna, interdum finibus quam. 
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+
+        </footer>
+
+        <script src="js/lazyload.js"></script>
+        <script src="js/toggle.js"></script>
+        <script src="js/weather.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
+        <script>
+            WebFont.load({
+                google: {
+                families: [
+                    'Frank Ruhl Libre',
+                    'B612',
+                    'Archivo' 
+                ]
+                }
+            });
+        </script>
+    </body>
+</html>

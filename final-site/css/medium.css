@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1000px) {
+
+    main {
+        padding: 0px;
+    }
+    
+    .responsive {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 0px;
+    }
+
+    .navigation a{
+        border-radius: 0px;
+    }
+
+    .navigation li:last-child, .navigation li:nth-child(2), .navigation li:last-child a, .navigation li:nth-child(2) a {
+        border-radius: 0px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /* Home Page */
+
+    .home-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .main-sections {
+        margin-bottom: 50px;
+        height: unset;
+    }
+
+    #advertisement {
+        margin-bottom: 50px;
+    }
+
+    .home-content img, #action-img {
+        grid-row: 1/2;
+        margin-bottom: 50px;
+    }
+
+    .home-content section {
+        grid-column: span 3;
+    }
+
+    #home-img-3, #weather-summary {
+        margin-top: 0;
+    }
+
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/food-truck.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/small.css">
+
+        <title>City of Boston</title>
+    </head>
+    <body>
+
+        <header>
+            <img class="icons" src="images/food-truck.png" alt="">
+            <h1>Boston's Booming Businesses</h1>
+            <img class="icons" src="images/food-truck-r.png" alt="">
+        </header>
+
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu </a></li>
+                <li><a href="index.html"    >Home</a></li>
+                <li class="current-page"><a href="city.html"     >Boston</a></li>
+                <li><a href="join.html"     >Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html"  >Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+            <h2 class="title">City of Boston</h2>
+
+            <picture class="hero-img">
+                <source media="(max-width: 700px)" srcset="images/boston-hero-sm.jpg" />
+                <source media="(max-width: 1000px)" srcset="images/boston-hero-med.jpg" />
+                <img src="images/boston-hero-lg.jpg" alt="The image for hero section" />
+            </picture>
+
+            <div class="city-grid">
+
+                <img class="city-page-img" src="images/placeholder.png" data-src="images/boston-city-img.jpg" alt="">
+    
+                <section class="main-sections">
+                    <h3>Summer Events</h3>
+                    <p><strong>What: </strong> Red Sox vs Yankees Game<br> <strong>When: </strong>Thursday, July 22 @ 7pm <br> <strong>Where:</strong> Fenway Park.
+                    </p>
+                    <p><strong>What: </strong> Guns N' Roses Concert <br> <strong>When: </strong>Tuesday, August 3 @ 5:30pm <br> <strong>Where:</strong> Fenway Park.
+                    </p>
+                    <p><strong>What: </strong> Summer of Play Carnival <br> <strong>When: </strong>Friday, July 30 @ 6pm - 9pm <br> <strong>Where:</strong> Boston Children's Museum.
+                    </p>
+                </section>
+
+                <section class="main-sections">
+                    <h3>Demographic Information</h3>
+                    <p><strong>Population: </strong> 695,926 <br> <strong>Senators: </strong> Elizabeth Warren, Ed Markey <br> 
+                        <strong>Median Age: </strong> 32.1 Years <br> <strong>Median Household Income:</strong> $71,834 <br></p>
+                    <p>
+                        <strong> Caucasian:</strong> 44.4% <br> <strong>African American:</strong> 22.4% <br> <strong>Asian: </strong> 9.33%<br> <strong>Hispanic: </strong> 14.56% <br>
+                        <strong>Multiracial</strong> 7.97% <br> <strong>Other: </strong> 1.34%
+                    </p>
+                    <p>Information found at:  <br><a href="https://datausa.io/profile/geo/boston-ma/#demographics" target="_blank">https://datausa.io/profile/geo/boston-ma/#demographics</a></p>
+                </section>
+    
+                <section class="main-sections" id="city-history">
+                    <h3>Historical Information</h3>
+                    <p>Boston is home to much of United States History from the location of the Boston Massacre to the first chocolate factory. </p>
+                </section>
+            </div>
+
+            
+
+        </main>
+
+        <footer>
+            <h3>Contact Information:</h3>
+            <p>000-000-0000</p>
+            <p>somone@something.com</p>
+
+            <h3>Social Media</h3>
+            <div class="span-2">
+
+            </div>
+
+
+            <h3 class="purpose-h3">Chamber purpose and goals</h3>
+            <p class="purpose-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida porta tempus. 
+                Suspendisse quis leo velit. Proin est massa, ultricies sed purus non, hendrerit pulvinar elit. 
+                Etiam ac dictum ipsum. Praesent aliquam mauris eu quam consequat fringilla. Nunc velit sapien, 
+                ultrices et pellentesque at, laoreet vitae ante. Nullam et maximus urna, interdum finibus quam. 
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+
+        </footer>
+
+        <script src="js/lazyload.js"></script>
+
+        <script src="js/toggle.js"></script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
+        <script>
+            WebFont.load({
+                google: {
+                families: [
+                    'Frank Ruhl Libre',
+                    'B612',
+                    'Archivo' 
+                ]
+                }
+            });
+        </script>
+    </body>
+</html>

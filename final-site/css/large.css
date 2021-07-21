@@ -1,0 +1,394 @@
+/* Basic Elements */
+html {
+    background-color: #457B9D;
+    font-size: 120%;
+}
+
+
+
+h1, h2, h3, h4 {
+    color: #F1FAEE;
+    background-color: #1D3557;
+    font-family: 'Frank Ruhl Libre', serif;
+    padding: 20px;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'B612', sans-serif;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    color: #1D3557;
+    background-color: #A8DADC;
+    padding: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    background-color: #F1FAEE;
+    color: #A31420;
+}
+
+a:hover {
+    color: #F1FAEE;
+    background-color: #A31420;
+}
+
+
+section h3 {
+    margin: 0px;
+}
+
+section p {
+    margin-top: 0px;
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto
+}
+
+
+img {
+    width: 5%;
+}
+
+
+
+/* Header */
+
+header, footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #1D3557;
+
+}
+
+.icons {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+/* Navigation */
+
+
+
+.navigation {
+    display: flex;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+    text-align: center;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.navigation li:first-child {
+    border-radius: 20px;
+    width:100%
+
+}
+
+.navigation li:first-child a {
+    border-radius: 20px;
+}
+
+.navigation li:nth-child(2), .navigation li:nth-child(3), .navigation li:nth-child(4), .navigation li:nth-child(5), .navigation li:nth-child(6) {
+    display: none
+}
+
+
+
+.navigation li:last-child, .navigation li:last-child a {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+    border: 2px solid white;
+
+}
+.navigation li a {
+    color: #F1FAEE;
+    background-color: #A31420;
+    display: block;
+	font-size: 125%;
+    padding: 20px;
+}
+
+.navigation li a:hover {
+    color: #A31420;
+    background-color: #F1FAEE;
+}
+
+.navigation .current-page{
+    border: 2px solid #A31420;
+}
+
+.navigation .current-page a{
+    color: #A31420;
+    background-color: #F1FAEE;
+}
+
+
+
+.responsive li:nth-child(2), .responsive li:nth-child(3), .responsive li:nth-child(4), .responsive li:nth-child(5), .responsive li:nth-child(6) {
+    display: block;
+}
+
+.responsive li:nth-child(1), .responsive li:nth-child(1) a {
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+/* Main */
+main {
+    padding: 40px;
+}
+
+.title {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Home Page */
+
+#alertBox {
+    display:grid;
+    grid-template-columns: 1fr;
+    border: 5px solid #A31420;
+    background-color: #A8DADC;
+}
+
+
+#alertBox a {
+    color: white;
+    background-color: #A31420;
+    grid-area: 1/1/2/2;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0px 0px -25px auto;
+    z-index: 1;
+    font-size: xx-large;
+    border: 1px double;
+}
+
+#alertBox a:hover {
+    color: #A31420;
+    background-color: #F1FAEE;
+}
+
+#alertBox h2 {
+    grid-area: 1/1/2/2;
+}
+
+#alertBox p {
+    margin: 0px auto 0px auto
+}
+
+.alert {
+    text-align: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-gap: 40px;
+    padding: 40px;
+}
+
+.action-div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#action-img {
+    grid-area: 1/1/2/2;
+}
+
+.action {
+    grid-area: 1/1/2/2;
+    margin: 10px auto auto;
+    font-size: xx-large;
+}
+
+.city-img, .city-page-img {
+    width: 100%;
+    margin: 0px auto;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.main-sections {
+    margin-bottom: 5em;
+}
+
+.main-sections h3 {
+    border: 5px double #A31420;
+
+}
+
+.main-sections p {
+    border: 2px solid #A31420;
+
+}
+
+#weather-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: unset;
+    margin-top: 4.5em;
+
+}
+
+#weather-summary h3 {
+    grid-column: span 2;
+
+}
+
+#weather-summary h4 {
+    margin: 0;
+    border-left: 2px solid #A31420;
+    border-right: 2px solid #A31420;
+}
+
+#weather-summary p {
+    border: 2px solid #A31420;
+
+}
+
+#home-img-3 {
+    margin-top: 4.5em;
+}
+
+.summary {
+    grid-column: 1/2;
+}
+
+.forecast {
+    grid-area: 2/2/3/3
+}
+
+/* Boston City Page */
+
+.hero-img img {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.city-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.city-page-img {
+    grid-row: span 2;
+}
+
+#city-history {
+    grid-column: span 2;
+}
+
+
+/* Join Page */
+
+fieldset {
+    display: grid;
+}
+
+.form-container {
+    max-width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+label {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+form label.form-ele input, form label.form-area textarea {
+    min-height: 44px;
+    width: 25em;
+    display: block;
+    margin: 10px auto 40px auto;
+}
+
+/* Directory Page */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.single {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.business-cards {
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.business-cards h2 {
+    height: 75px;
+    margin: 0;
+    border-radius: 20px 20px 0px 0;
+}
+
+.business-cards a {
+    text-align: center;
+}
+
+.business-cards img {
+    width: 80%;
+}
+
+/* Footer */
+
+footer {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.purpose-h3 {
+    grid-column: 2/3;
+}
+
+.purpose-p {
+    grid-area: 4/1/5/4;
+}

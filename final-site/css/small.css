@@ -1,0 +1,21 @@
+@media only screen and (max-width: 700px) {
+    .navigation {
+        display: block;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content img {
+        grid-row: unset;
+    }
+
+    .home-content section {
+        grid-column: unset;
+    }
+}
