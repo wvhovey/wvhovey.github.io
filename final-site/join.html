@@ -15,10 +15,11 @@
     <body>
 
         <header>
-            <img class="icons" src="images/food-truck.png" alt="">
+            <img class="icons" src="images/food-truck.png" alt="Right Facing Icon">
             <h1>Boston's Booming Businesses</h1>
-            <img class="icons" src="images/food-truck-r.png" alt="">
+            <img class="icons" id="truck-r" src="images/food-truck-r.png" alt="Left Facing Icon">
         </header>
+
 
         <nav>
             <ul class="navigation responsive">
@@ -35,58 +36,93 @@
 
         <main>
             <h2 class="title">Join Us</h2>
+            <section class="main-sections">
+                <h3>Benefits of Joining</h3>
+                <p>Thank your for your interest in becoming a part of our Food Truck family! Nothing would make us happier
+                    than if every food truck in Boston were a part of our chamber of commerce. When you join us, we will 
+                    provide assistance to your business in the form of financial assistance, legal assistance, advice from 
+                    business professionals, and a support group of other food trucks in the greater Boston area.
+                    You will have a choice of 4 different levels when applying for membership: Non-Profit, Bronze, Silver and Gold.
+                    Each level has a variety of perks as well as different pricetags associated with them (see more information below the form).
+                    Welcome to Boston's Booming Businesses! We look forward to meeting with you and your crew.
+                </p>
+            </section>
 
-            <form method="GET" action="thanks-join.html">
-                <fieldset>
-                    <legend><h3>Fill out form</h3></legend>
+                <form method="GET" action="thanks-join.html">
+                    <fieldset>
+                        <legend><h3>Application</h3></legend>
+                        <div class="input-guide">
+                            <div class="req-field">* Required Information *</div>
+                            <div class="red-box">Invalid Information</div>
+                            <div class="green-box">Valid Information</div>
+                            <div class="cyan-box">Optional Information</div>
+                        </div>
 
-                    <div class="form-container">
-                        <label for="first-name" class="form-ele">First Name<input        type="text"   name="first-name" placeholder="First Name" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
-                        <label for="last-name"  class="form-ele">Last Name<input         type="text"   name="last-name"  placeholder="First Name" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
-                        <label for="title"      class="form-ele">Title<input             type="text"   name="title"      placeholder="Title"></label>
-                        <label for="email"      class="form-ele">Email<input             type="email"  name="email"      placeholder="someone@gmail.com" required></label>
-                        <label for="phone"      class="form-ele">Cell Phone Number<input type="number" name="phone"      placeholder="000-000-0000"></label>
-                        <label for="b-name"     class="form-ele">Business Name<input     type="text"   name="b-name"     required></label>
-                        <label for="b-address"  class="form-ele">Business Address<input  type="text"   name="b-address"></label>
-                        <label for="b-website"  class="form-ele">Business Website<input  type="text"   name="b-website"></label>
-                        <label for="b-desc"     class="form-area">Business Description<textarea        name="b-desc" rows="10" placeholder="Description"></textarea></label>
-        
-                        <div>Membership Level</div>
-                        <label class="radio"><input type="radio" name="membership" value="np"  > Non-profit ($100)</label>
-                        <label class="radio"><input type="radio" name="membership" value="b"   > Bronze ($200)</label>
-                        <label class="radio"><input type="radio" name="membership" value="s"   > Silver ($400)</label>
-                        <label class="radio"><input type="radio" name="membership" value="g"   > Gold ($1000)</label>
-
-                        <input type="submit" value="Request to Join" name="submitBtn" class="submitBtn">
-        
-                    </div>
-                </fieldset>
+                        <hr>
 
 
-            </form>   
+                        <div class="form-container">
+                            <label class="form-ele"> * First Name *<input   type="text"   name="first-name" placeholder="First Name" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
+                            <label class="form-ele">* Last Name *<input     type="text"   name="last-name"  placeholder="First Name" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
+                            <label class="form-ele">Title<input             type="text"   name="title"      placeholder="Title"></label>
+                            <label class="form-ele">* Email *<input         type="email"  name="email"      placeholder="someone@gmail.com" required></label>
+                            <label class="form-ele">Cell Phone Number<input type="number" name="phone"      placeholder="000-000-0000"></label>
+                            <label class="form-ele">* Business Name *<input type="text"   name="b-name"     required></label>
+                            <label class="form-ele">Business Address<input  type="text"   name="b-address"></label>
+                            <label class="form-ele">Business Website<input  type="text"   name="b-website"></label>
+                            <label class="form-area">Business Description<textarea        name="b-desc" rows="10" placeholder="Description"></textarea></label>
+            
+                            <div id="m-level"> <h4>* Membership Level * (see different perks below)</h4></div>
+                            <label class="radio"><input type="radio" name="membership" value="np"  required> Non-profit ($100 per year)</label>
+                            <label class="radio"><input type="radio" name="membership" value="b"   required> Bronze ($200 per year)</label>
+                            <label class="radio"><input type="radio" name="membership" value="s"   required> Silver ($400 per year)</label>
+                            <label class="radio"><input type="radio" name="membership" value="g"   required> Gold ($1000 per year)</label>
+
+                            <input type="submit" value="Request to Join" name="submitBtn" class="submitBtn">
+            
+                        </div>
+                    </fieldset>
+
+
+                </form> 
+                <section class="main-sections">
+                    <h3>Membership Perks per Level</h3>
+                    <p>
+                        <strong>Non-profit</strong> level will give your food truck access to legal advice, financial assistance up to $5,000, 
+                        and group meetings on the current climate of food truck business in Boston. <br><br>
+                        <strong>Bronze </strong> level will give your food truck all the perks of Non-profit as well as an extra $10,000 
+                        and our 24/7 customer service desk. You will also earn a spot on our directory page along side other Bronze+ members.<br><br>
+                        <strong>Silver</strong> level will give your food truck all the perks of Bronze as well as regular personal meetings 
+                        with trained professionals on how to run your business more efficiently, and an extra $20,000 in financial assistance. In addition,
+                        you and your crew will earn 1 luncheon ticket per day per truck, and 1 social media post per week that is sent to our 1 million followers.<br><br>
+                        <strong>Gold</strong> level will give your food truck all the perks of Silver as well as unlimited use of our company's resources.
+                        Anything that we can do in our power to help your food truck succeed, we will do. This includes but is not limited to: unlimited luncheon tickets, 
+                        free reign on sponsorships with our advertisement department and much more.
+                    </p>
+                </section>
 
         </main>
 
         <footer>
             <h3>Contact Information:</h3>
-            <p>000-000-0000</p>
-            <p>somone@something.com</p>
+            <p class="span-2"><strong>Phone: </strong>617-789-0010<br><strong>Email: </strong> bostontrucks@gmail.com (or fill out form on our Contact page)<br><strong>Address: </strong> 1289 Atlantic Avenue, Boston, MA 02111</p>
 
-            <h3>Social Media</h3>
-            <div class="span-2">
-                <img src="images/sunny.png" alt="">
-                <img src="images/sunny.png" alt="">
-                <img src="images/sunny.png" alt="">
-                <img src="images/sunny.png" alt="">
+
+            <h3>Social Media:</h3>
+            <div class="span-2 social-div">
+                <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FFacebook%20Icon.png?v=1611762375483"  alt="Facebook Link"></a>
+                <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FInstagram%20Icon.png?v=1611762381639" alt="YouTube Link"></a>
+                <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
             </div>
 
 
-            <h3 class="purpose-h3">Chamber purpose and goals</h3>
-            <p class="purpose-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida porta tempus. 
-                Suspendisse quis leo velit. Proin est massa, ultricies sed purus non, hendrerit pulvinar elit. 
-                Etiam ac dictum ipsum. Praesent aliquam mauris eu quam consequat fringilla. Nunc velit sapien, 
-                ultrices et pellentesque at, laoreet vitae ante. Nullam et maximus urna, interdum finibus quam. 
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            <h3 class="purpose-h3">Chamber Purpose and Goals</h3>
+            <p class="purpose-p">
+                This chamber began because the owners attempted to follow their dreams to start a food truck while they were in a their early 20's.
+                They had no support and they failed many times until, by pure chance, they succeeded. It is the goal of this chamber to prevent that from happening to anyone who is attempting 
+                to run a food truck in the greater Boston area. We offer financial assistance from the high taxes of Massachusetts, legal advice on how to begin
+                the process of food trucking, regular luncheons, free advertisement on social media platforms with access to our advertisement department, and so much more.
+                Every food truck in Boston should be part of Boston's Booming Businesses and take advantage of the help found within this chamber.
             </p>
 
         </footer>
@@ -94,16 +130,6 @@
         <script src="js/toggle.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
-        <script>
-            WebFont.load({
-                google: {
-                families: [
-                    'Frank Ruhl Libre',
-                    'B612',
-                    'Archivo' 
-                ]
-                }
-            });
-        </script>
+        <script src="js/fonts.js"></script>
     </body>
 </html>

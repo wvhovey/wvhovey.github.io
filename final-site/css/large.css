@@ -28,13 +28,14 @@ ul {
 p {
     color: #1D3557;
     background-color: #A8DADC;
+    font-family: 'Oxygen', sans-serif ;
     padding: 20px;
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Oxygen', sans-serif ;
     background-color: #F1FAEE;
     color: #A31420;
 }
@@ -60,8 +61,9 @@ body {
 
 
 img {
-    width: 5%;
+    width: 50%;
 }
+
 
 
 
@@ -80,7 +82,12 @@ header, footer {
 .icons {
     display: block;
     margin: auto;
-    width: 150px;
+    width: 50%;
+}
+
+.title, header, footer {
+    border: 1px solid #F1FAEE;
+    margin: 10px 20px;
 }
 
 /* Navigation */
@@ -93,7 +100,7 @@ header, footer {
 	padding: 0;
 	overflow: hidden;
     text-align: center;
-    margin: 0px;
+    margin: 0px 20px;
     border-radius: 10px;
 }
 
@@ -144,8 +151,6 @@ header, footer {
     color: #A31420;
     background-color: #F1FAEE;
 }
-
-
 
 .responsive li:nth-child(2), .responsive li:nth-child(3), .responsive li:nth-child(4), .responsive li:nth-child(5), .responsive li:nth-child(6) {
     display: block;
@@ -222,20 +227,33 @@ main {
 .action-div {
     display: grid;
     grid-template-columns: 1fr;
+    width: 99%;
+
 }
 
 #action-img {
     grid-area: 1/1/2/2;
+    width: 99%;
 }
 
 .action {
+    color: #F1FAEE;
+    background-color: #A31420;
     grid-area: 1/1/2/2;
     margin: 10px auto auto;
     font-size: xx-large;
+    padding: 15px;
+    border: 2px solid #F1FAEE;
+    border-radius: 20px;
+}
+
+.action:hover {
+    color: #A31420;
+    background-color: #F1FAEE;
 }
 
 .city-img, .city-page-img {
-    width: 100%;
+    width: 99%;
     margin: 0px auto;
     border: 5px solid white;
     border-radius: 20px;
@@ -247,12 +265,24 @@ main {
 
 .main-sections h3 {
     border: 5px double #A31420;
+    border-radius: 10px 10px 0 0 ;
 
 }
 
 .main-sections p {
     border: 2px solid #A31420;
+}
 
+.main-sections p:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.main-sections div.weather-div p{
+    border-radius: 0 0 0 10px;
+}
+
+.main-sections div.weather-div2 p {
+    border-radius: 0 0 10px 0;
 }
 
 #weather-summary {
@@ -295,7 +325,10 @@ main {
 
 .hero-img img {
     width: 98%;
-    margin: 0 auto;
+    margin: 20px auto;
+    border: 2px solid #F1FAEE;
+    border-radius: 20px;
+
 }
 
 .city-grid {
@@ -305,7 +338,7 @@ main {
 }
 
 .city-page-img {
-    grid-row: span 2;
+    grid-area: 1/1/3/2;
 }
 
 #city-history {
@@ -313,34 +346,181 @@ main {
 }
 
 
+
 /* Join Page */
 
-fieldset {
-    display: grid;
+form fieldset {
+    border: 5px double #A31420;
+    margin: 20px 15%;
+    border-radius: 5px;
+}
+
+legend {
+    margin: 0 auto;
+}
+
+legend h3 {
+    padding: 20px 60px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+form {
+    display: block;
+    margin: 0 auto 0 0;
+
 }
 
 .form-container {
     max-width: 500px;
-
     margin-left: auto;
     margin-right: auto;
-
-
 }
 
 label {
     display: block;
-    margin: 0 auto 0 auto;
+    margin: 20px auto 0px auto;
+    font-family: 'Oxygen', sans-serif ;
+    color: white;
+    background-color: #1D3557;
+    border-radius: 10px;
+    padding: 5px 0px .1px 5px;
+    font-family: 'Oxygen, sans-serif';
+    width: 95%;
+
 }
 
 form label.form-ele input, form label.form-area textarea {
     min-height: 44px;
-    width: 25em;
+    width: 95%;
     display: block;
     margin: 10px auto 40px auto;
+    color: #1D3557;
+    background-color: #A8DADC;
+
+
+}
+
+form label.form-ele input:required {
+    color:  #A31420;
+    background-color: white;
+
+}
+
+form label.form-ele input:required:invalid {
+    color: black;
+    background-color: lightcoral;
+
+}
+
+form label.form-ele input:required:valid {
+    color: white;
+    background-color: #315E31;
+
+}
+
+form label.radio {
+    padding: 10px;
+}
+
+.input-guide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+hr {
+    border: 3px double #A31420;
+}
+
+.red-box {
+    width: 125px;
+    height: 50px;
+    background-color: lightcoral;
+    border: 2px solid #1D3557;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.green-box {
+    width: 125px;
+    height: 50px;
+    background-color: #315E31;
+    color: white;
+    border: 2px solid #1D3557;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.req-field {
+    color: white;
+    background-color: #1D3557;
+    width: 125px;
+    height: 50px;
+    border: 2px solid #1D3557;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.cyan-box {
+    color: #1D3557;
+    background-color: #A8DADC;
+    width: 125px;
+    height: 50px;
+    border: 2px solid #1D3557;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+#m-level {
+    font-family: 'Oxygen, sans-serif';
+}
+
+form input.submitBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 100px;
+    background-color: #A31420;
+    color: #F1FAEE;
+    border: 3px double #F1FAEE; 
+    border-radius: 20px;  
+    font-size: x-large; 
+}
+
+form input.submitBtn:hover {
+    background-color: #F1FAEE;
+    color: #A31420;
 }
 
 /* Directory Page */
+
+.toggle-card  {
+    text-align: center;
+    margin-left: auto;
+    font-size: 200%;
+    padding: 10px
+}
+
+.toggle-card a {
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.toggle-grid {
+    display: grid;
+    grid-template-columns: 15% 10% 10%;
+    margin-bottom: 40px;
+}
+
+.toggle-grid h4 {
+    margin: 0;
+    padding: 10px
+}
 
 .cards {
     display: grid;
@@ -351,6 +531,17 @@ form label.form-ele input, form label.form-area textarea {
 .single {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.single .business-img-div img{
+    max-height: 224px;
+    width: 37%;
+}
+
+.single .business-img-div {
+    text-align: center;
+
 }
 
 .business-cards {
@@ -358,6 +549,7 @@ form label.form-ele input, form label.form-area textarea {
     border-radius: 20px;
     width: 75%;
     margin: 0 auto;
+    background-color: #1D3557
 
 }
 
@@ -367,12 +559,48 @@ form label.form-ele input, form label.form-area textarea {
     border-radius: 20px 20px 0px 0;
 }
 
-.business-cards a {
+.business-cards p {
     text-align: center;
 }
 
+.business-cards a {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 70px;
+}
+
 .business-cards img {
-    width: 80%;
+    margin: 0 auto;
+    width: 99%;
+}
+
+.business-img-div {
+    height: 50%;
+    margin: 10px 0 0;
+}
+
+/* Contact */
+
+.google {
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 85%;
+}
+
+.directors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.main-sections div.directors p:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.main-sections div.directors p:last-child {
+    border-radius: 0 0 10px 0;
 }
 
 /* Footer */
@@ -383,6 +611,7 @@ footer {
 
 .span-2 {
     grid-column: span 2;
+    border-radius: 10px;
 }
 
 .purpose-h3 {
@@ -391,4 +620,22 @@ footer {
 
 .purpose-p {
     grid-area: 4/1/5/4;
+    border-radius: 10px;
+}
+
+.social-div {
+    margin: 10px 0;
+}
+
+a.social {
+    color: transparent;
+    background-color: transparent;
+}
+a.social img {
+    width: 8%;
+
+}
+
+a.social img:hover {
+    border: 1px solid red
 }
