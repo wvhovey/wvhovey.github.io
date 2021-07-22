@@ -247,11 +247,12 @@ main {
     background-color: #F1FAEE;
 }
 
-.action-div p {
+.action-div h2 {
     grid-area: 1/1/2/2;
     font-size: xx-large;
     text-align: center;
     border-radius: 10px;
+    color: #1D3557;
     background-color: #a8dadcc2;
 }
 
@@ -492,10 +493,10 @@ form input.submitBtn:hover {
 /* Directory Page */
 
 .change-view {
-
     margin: 5px;
     text-align: center;
     text-align: center;
+    border: 1px solid white;
     border-radius: 10px;
     font-size: 125%;
     margin: 0 20px
