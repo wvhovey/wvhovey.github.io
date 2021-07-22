@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Final Site Home Page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
         <link rel="icon" type="image/png" href="images/food-truck.png">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/large.css">
         <link rel="stylesheet" href="css/medium.css">
@@ -12,6 +16,7 @@
 
         <title>Home</title>
     </head>
+
     <body>
 
         <header>
@@ -28,18 +33,15 @@
                 <li><a href="join.html"     >Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="contact.html"  >Contact</a></li>
-
             </ul>
-
         </nav>
 
         <main>
+
             <h2 class="title">Home</h2>
             <div id="alertBox">
                 <a href="#" onclick="hide(alertBox)">X</a>
-                <h2 class="alert"> !!!  
-                    <span id="weather-alert"></span> !!!
-                </h2>
+                <h2 class="alert"> !!! <span id="weather-alert"></span> !!! </h2>
                 <p class="alert"><span id="weather-alert-desc"></span></p>
             </div>
 
@@ -47,19 +49,21 @@
             <div class="home-content">
 
                 <div class="action-div">
-                    <img class="city-img" id="action-img" src="images/placeholder.png" data-src="images/boston-img-1.jpg" alt="Boston Harbor and city Skyline">
-    
+                    <p>Do you have a food truck in Boston?</p>
                     <a class="action" href="join.html">Join Us!</a>
                 </div>
+
+                <img class="city-img" id="action-img" src="images/placeholder.png" data-src="images/boston-img-1.jpg" alt="Boston Harbor and city Skyline">
+
     
                 <section class="main-sections" id="advertisement">
                     <h3>Food Truck Spotlight!</h3>
                     <p><strong>The Chicken and Rice Guys</strong> <br> Interested in something filling and savory to get you through rush hour? 
-                        Look no further than the Chicken and Rice Guys. Offering an array of falafel options with different types of meat and authentic greek sauces.
+                        Look no further than the Chicken and Rice Guys. Offering an array of falafel options with different types of meat and authentic Greek sauces.
                         You can try them today at the square by South Station and outside Tufts Medical Center!
                     </p>
                     <p><strong>Cookie Monstah</strong> <br> Maybe looking for something to squash your sweet tooth? Cookie Monstah may be the truck for you! 
-                        They offer a variety of homemade icecreams in cups, waffle cones, and most famously in between two delicious cookies! 
+                        They offer a variety of homemade ice cream in cups, waffle cones, and most famously in between two delicious cookies! 
                         You can find them every day from 12pm - 6pm at the Green Carousel near Faneuil Hall.
                     </p>
                     <p><strong>The Bacon Truck</strong> <br> BACON! Need we say more? Get anything and everything bacon related for a hearty, tasty breakfast! 
@@ -75,7 +79,7 @@
                     <h3>Company Events</h3>
                     <p><strong>What: </strong> Recruitment Day<br> <strong>When: </strong>Thursday, July 29 @ 5pm <br> <strong>Where:</strong> 1289 Atlantic Avenue, Boston, MA 02111 @ the auditorium.
                     </p>
-                    <p><strong>What: </strong> Luncheon and Icecream Social <br> <strong>When: </strong>Tuesday, August 10 @ 2pm <br> <strong>Where:</strong> 1289 Atlantic Avenue, Boston, MA 02111 @ the cultural hall.
+                    <p><strong>What: </strong> Luncheon and Ice cream Social <br> <strong>When: </strong>Tuesday, August 10 @ 2pm <br> <strong>Where:</strong> 1289 Atlantic Avenue, Boston, MA 02111 @ the cultural hall.
                     </p>
                     <p><strong>What: </strong> Foodie Get-Together <br> <strong>When: </strong>Friday, July 30 @ 6pm - 9pm <br> <strong>Where:</strong> 1289 Atlantic Avenue, Boston, MA 02111 @ the parking lot.
                     </p>
@@ -99,20 +103,15 @@
                             <strong><span id="weekday2"></span>:</strong> <span id="tomorrow-forecast"></span> <br> 
                             <strong><span id="weekday3"></span>:</strong> <span id="third-forecast"></span></p>
                     </div>
-
-                    
                 </section>
 
             </div>
-
-            
 
         </main>
 
         <footer>
             <h3>Contact Information:</h3>
             <p class="span-2"><strong>Phone: </strong>617-789-0010<br><strong>Email: </strong> bostontrucks@gmail.com (or fill out form on our Contact page)<br><strong>Address: </strong> 1289 Atlantic Avenue, Boston, MA 02111</p>
-
 
             <h3>Social Media:</h3>
             <div class="span-2 social-div">
@@ -121,22 +120,23 @@
                 <a class="social" href="#"><img src="https://cdn.glitch.com/061fc8d4-b324-4845-9938-1a780da20272%2FYouTube%20Icon.png?v=1611762379580"   alt="Instagram Link"></a>
             </div>
 
-
             <h3 class="purpose-h3">Chamber Purpose and Goals</h3>
             <p class="purpose-p">
-                This chamber began because the owners attempted to follow their dreams to start a food truck while they were in a their early 20's.
-                They had no support and they failed many times until, by pure chance, they succeeded. It is the goal of this chamber to prevent that from happening to anyone who is attempting 
+                This chamber began because the owners attempted to follow their dreams to start a food truck while they were in their early 20's.
+                They had no support, and they failed many times until, by pure chance, they succeeded. It is the goal of this chamber to prevent that from happening to anyone who is attempting 
                 to run a food truck in the greater Boston area. We offer financial assistance from the high taxes of Massachusetts, legal advice on how to begin
                 the process of food trucking, regular luncheons, free advertisement on social media platforms with access to our advertisement department, and so much more.
                 Every food truck in Boston should be part of Boston's Booming Businesses and take advantage of the help found within this chamber.
             </p>
 
+            <p class="last-mod">Last Modified: <span id="last-modified"></span></p>
+
         </footer>
 
+        <script src="js/last-modified.js"></script>
         <script src="js/lazyload.js"></script>
         <script src="js/toggle.js"></script>
         <script src="js/weather.js"></script>
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
         <script src="js/fonts.js"></script>

@@ -4,21 +4,17 @@ html {
     font-size: 120%;
 }
 
-
-
 h1, h2, h3, h4 {
     color: #F1FAEE;
     background-color: #1D3557;
     font-family: 'Frank Ruhl Libre', serif;
     padding: 20px;
     text-align: center;
-
 }
 
 h1 {
     font-family: 'B612', sans-serif;
     text-align: center;
-
 }
 
 ul {
@@ -45,7 +41,6 @@ a:hover {
     background-color: #A31420;
 }
 
-
 section h3 {
     margin: 0px;
 }
@@ -59,12 +54,9 @@ body {
     margin: 0 auto
 }
 
-
 img {
     width: 50%;
 }
-
-
 
 
 /* Header */
@@ -90,9 +82,8 @@ header, footer {
     margin: 10px 20px;
 }
 
+
 /* Navigation */
-
-
 
 .navigation {
     display: flex;
@@ -107,7 +98,6 @@ header, footer {
 .navigation li:first-child {
     border-radius: 20px;
     width:100%
-
 }
 
 .navigation li:first-child a {
@@ -118,8 +108,6 @@ header, footer {
     display: none
 }
 
-
-
 .navigation li:last-child, .navigation li:last-child a {
     border-radius: 0px 10px 10px 0px;
 }
@@ -128,8 +116,8 @@ header, footer {
     display: block;
     flex: 1 1 100%;
     border: 2px solid white;
-
 }
+
 .navigation li a {
     color: #F1FAEE;
     background-color: #A31420;
@@ -162,6 +150,7 @@ header, footer {
 
 
 /* Main */
+
 main {
     padding: 40px;
 }
@@ -174,6 +163,7 @@ main {
     margin-right: 20%;
 }
 
+
 /* Home Page */
 
 #alertBox {
@@ -182,7 +172,6 @@ main {
     border: 5px solid #A31420;
     background-color: #A8DADC;
 }
-
 
 #alertBox a {
     color: white;
@@ -225,22 +214,28 @@ main {
 }
 
 .action-div {
+    grid-area: 1/1/2/3;
+    display: block;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    width: 99%;
-
+    width: 70%;
+    background-color: #A8DADC;
+    border: 3px solid #A31420;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 #action-img {
-    grid-area: 1/1/2/2;
+    grid-area: 2/1/3/2;
     width: 99%;
 }
 
 .action {
     color: #F1FAEE;
     background-color: #A31420;
-    grid-area: 1/1/2/2;
-    margin: 10px auto auto;
+    display: block;
+    margin: auto;
     font-size: xx-large;
     padding: 15px;
     border: 2px solid #F1FAEE;
@@ -250,6 +245,14 @@ main {
 .action:hover {
     color: #A31420;
     background-color: #F1FAEE;
+}
+
+.action-div p {
+    grid-area: 1/1/2/2;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #a8dadcc2;
 }
 
 .city-img, .city-page-img {
@@ -266,7 +269,6 @@ main {
 .main-sections h3 {
     border: 5px double #A31420;
     border-radius: 10px 10px 0 0 ;
-
 }
 
 .main-sections p {
@@ -290,12 +292,10 @@ main {
     grid-template-columns: 1fr 1fr;
     border: unset;
     margin-top: 4.5em;
-
 }
 
 #weather-summary h3 {
     grid-column: span 2;
-
 }
 
 #weather-summary h4 {
@@ -321,6 +321,7 @@ main {
     grid-area: 2/2/3/3
 }
 
+
 /* Boston City Page */
 
 .hero-img img {
@@ -328,7 +329,6 @@ main {
     margin: 20px auto;
     border: 2px solid #F1FAEE;
     border-radius: 20px;
-
 }
 
 .city-grid {
@@ -346,8 +346,11 @@ main {
 }
 
 
-
 /* Join Page */
+
+#join-bene {
+    margin-top: 40px;
+}
 
 form fieldset {
     border: 5px double #A31420;
@@ -368,7 +371,6 @@ legend h3 {
 form {
     display: block;
     margin: 0 auto 0 0;
-
 }
 
 .form-container {
@@ -387,7 +389,6 @@ label {
     padding: 5px 0px .1px 5px;
     font-family: 'Oxygen, sans-serif';
     width: 95%;
-
 }
 
 form label.form-ele input, form label.form-area textarea {
@@ -397,26 +398,21 @@ form label.form-ele input, form label.form-area textarea {
     margin: 10px auto 40px auto;
     color: #1D3557;
     background-color: #A8DADC;
-
-
 }
 
 form label.form-ele input:required {
     color:  #A31420;
     background-color: white;
-
 }
 
 form label.form-ele input:required:invalid {
     color: black;
     background-color: lightcoral;
-
 }
 
 form label.form-ele input:required:valid {
     color: white;
     background-color: #315E31;
-
 }
 
 form label.radio {
@@ -440,7 +436,6 @@ hr {
     border: 2px solid #1D3557;
     padding: 10px;
     margin: 0 auto;
-
 }
 
 .green-box {
@@ -451,7 +446,6 @@ hr {
     border: 2px solid #1D3557;
     padding: 10px;
     margin: 0 auto;
-
 }
 
 .req-field {
@@ -462,7 +456,6 @@ hr {
     border: 2px solid #1D3557;
     padding: 10px;
     margin: 0 auto;
-
 }
 
 .cyan-box {
@@ -473,7 +466,6 @@ hr {
     border: 2px solid #1D3557;
     padding: 10px;
     margin: 0 auto;
-
 }
 
 #m-level {
@@ -496,11 +488,22 @@ form input.submitBtn:hover {
     color: #A31420;
 }
 
+
 /* Directory Page */
+
+.change-view {
+
+    margin: 5px;
+    text-align: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 125%;
+    margin: 0 20px
+}
 
 .toggle-card  {
     text-align: center;
-    margin-left: auto;
+    margin: 0 auto 0 auto;
     font-size: 200%;
     padding: 10px
 }
@@ -508,13 +511,12 @@ form input.submitBtn:hover {
 .toggle-card a {
     padding: 10px 20px;
     border-radius: 20px;
-
 }
 
 .toggle-grid {
     display: grid;
-    grid-template-columns: 15% 10% 10%;
-    margin-bottom: 40px;
+    grid-template-columns: 20% 10% 10%;
+    margin: 40px;
 }
 
 .toggle-grid h4 {
@@ -541,7 +543,6 @@ form input.submitBtn:hover {
 
 .single .business-img-div {
     text-align: center;
-
 }
 
 .business-cards {
@@ -550,7 +551,6 @@ form input.submitBtn:hover {
     width: 75%;
     margin: 0 auto;
     background-color: #1D3557
-
 }
 
 .business-cards h2 {
@@ -580,6 +580,11 @@ form input.submitBtn:hover {
     margin: 10px 0 0;
 }
 
+.business-img-div, .business-cards img {
+    border-radius: 20px;
+}
+
+
 /* Contact */
 
 .google {
@@ -603,6 +608,7 @@ form input.submitBtn:hover {
     border-radius: 0 0 10px 0;
 }
 
+
 /* Footer */
 
 footer {
@@ -616,6 +622,7 @@ footer {
 
 .purpose-h3 {
     grid-column: 2/3;
+    margin: 0;
 }
 
 .purpose-p {
@@ -624,7 +631,7 @@ footer {
 }
 
 .social-div {
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 a.social {
@@ -633,9 +640,16 @@ a.social {
 }
 a.social img {
     width: 8%;
-
+    border: 1px solid white;
 }
 
 a.social img:hover {
-    border: 1px solid red
+    border: 1px solid #A31420;
+}
+
+.last-mod {
+    grid-area: 5/2/6/3;
+    border: 3px solid #A31420;
+    border-radius: 10px;
+    margin-top: 20px;
 }

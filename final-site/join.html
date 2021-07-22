@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Final Site Join Page for Vaughan Hovey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+
         <link rel="icon" type="image/png" href="images/food-truck.png">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/large.css">
         <link rel="stylesheet" href="css/medium.css">
@@ -12,6 +16,7 @@
 
         <title>Join Us!</title>
     </head>
+
     <body>
 
         <header>
@@ -29,28 +34,32 @@
                 <li class="current-page"><a href="join.html"     >Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="contact.html"  >Contact</a></li>
-
             </ul>
-
         </nav>
 
         <main>
             <h2 class="title">Join Us</h2>
-            <section class="main-sections">
+
+            <section class="main-sections" id="join-bene">
                 <h3>Benefits of Joining</h3>
-                <p>Thank your for your interest in becoming a part of our Food Truck family! Nothing would make us happier
-                    than if every food truck in Boston were a part of our chamber of commerce. When you join us, we will 
-                    provide assistance to your business in the form of financial assistance, legal assistance, advice from 
-                    business professionals, and a support group of other food trucks in the greater Boston area.
-                    You will have a choice of 4 different levels when applying for membership: Non-Profit, Bronze, Silver and Gold.
-                    Each level has a variety of perks as well as different pricetags associated with them (see more information below the form).
-                    Welcome to Boston's Booming Businesses! We look forward to meeting with you and your crew.
+                <p>Thank you for your interest in becoming a part of our Food Truck family! 
+                    Nothing would make us happier than if every food truck in Boston were a part 
+                    of our chamber of commerce. When you join us, we will aid your business in the 
+                    form of financial assistance, legal assistance, advice from business professionals, 
+                    and a support group of other food trucks in the greater Boston area. You will have 
+                    a choice of 4 different levels when applying for membership: Non-Profit, Bronze, Silver 
+                    and Gold. Each level has a variety of perks as well as different price tags associated 
+                    with them (see more information below the form). Welcome to Boston's Booming Businesses! 
+                    We look forward to meeting with you and your crew.
                 </p>
             </section>
 
                 <form method="GET" action="thanks-join.html">
+
                     <fieldset>
-                        <legend><h3>Application</h3></legend>
+
+                        <legend><h3>Membership Application</h3></legend>
+
                         <div class="input-guide">
                             <div class="req-field">* Required Information *</div>
                             <div class="red-box">Invalid Information</div>
@@ -59,7 +68,6 @@
                         </div>
 
                         <hr>
-
 
                         <div class="form-container">
                             <label class="form-ele"> * First Name *<input   type="text"   name="first-name" placeholder="First Name" minlength="2" required pattern="[A-Za-z]+[A-Za-z ]+"></label>
@@ -79,24 +87,24 @@
                             <label class="radio"><input type="radio" name="membership" value="g"   required> Gold ($1000 per year)</label>
 
                             <input type="submit" value="Request to Join" name="submitBtn" class="submitBtn">
-            
                         </div>
+
                     </fieldset>
 
-
                 </form> 
+
                 <section class="main-sections">
                     <h3>Membership Perks per Level</h3>
                     <p>
                         <strong>Non-profit</strong> level will give your food truck access to legal advice, financial assistance up to $5,000, 
                         and group meetings on the current climate of food truck business in Boston. <br><br>
                         <strong>Bronze </strong> level will give your food truck all the perks of Non-profit as well as an extra $10,000 
-                        and our 24/7 customer service desk. You will also earn a spot on our directory page along side other Bronze+ members.<br><br>
+                        and our 24/7 customer service desk. You will also earn a spot on our directory page alongside other Bronze+ members.<br><br>
                         <strong>Silver</strong> level will give your food truck all the perks of Bronze as well as regular personal meetings 
                         with trained professionals on how to run your business more efficiently, and an extra $20,000 in financial assistance. In addition,
                         you and your crew will earn 1 luncheon ticket per day per truck, and 1 social media post per week that is sent to our 1 million followers.<br><br>
                         <strong>Gold</strong> level will give your food truck all the perks of Silver as well as unlimited use of our company's resources.
-                        Anything that we can do in our power to help your food truck succeed, we will do. This includes but is not limited to: unlimited luncheon tickets, 
+                        Anything that we can do in our power to help your food truck succeed, we will do. This includes but is not limited to unlimited luncheon tickets, 
                         free reign on sponsorships with our advertisement department and much more.
                     </p>
                 </section>
@@ -106,7 +114,6 @@
         <footer>
             <h3>Contact Information:</h3>
             <p class="span-2"><strong>Phone: </strong>617-789-0010<br><strong>Email: </strong> bostontrucks@gmail.com (or fill out form on our Contact page)<br><strong>Address: </strong> 1289 Atlantic Avenue, Boston, MA 02111</p>
-
 
             <h3>Social Media:</h3>
             <div class="span-2 social-div">
@@ -118,15 +125,18 @@
 
             <h3 class="purpose-h3">Chamber Purpose and Goals</h3>
             <p class="purpose-p">
-                This chamber began because the owners attempted to follow their dreams to start a food truck while they were in a their early 20's.
-                They had no support and they failed many times until, by pure chance, they succeeded. It is the goal of this chamber to prevent that from happening to anyone who is attempting 
+                This chamber began because the owners attempted to follow their dreams to start a food truck while they were in their early 20's.
+                They had no support, and they failed many times until, by pure chance, they succeeded. It is the goal of this chamber to prevent that from happening to anyone who is attempting 
                 to run a food truck in the greater Boston area. We offer financial assistance from the high taxes of Massachusetts, legal advice on how to begin
                 the process of food trucking, regular luncheons, free advertisement on social media platforms with access to our advertisement department, and so much more.
                 Every food truck in Boston should be part of Boston's Booming Businesses and take advantage of the help found within this chamber.
             </p>
 
+            <p class="last-mod">Last Modified: <span id="last-modified"></span></p>
+
         </footer>
 
+        <script src="js/last-modified.js"></script>
         <script src="js/toggle.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> <!--Reference to access Google fonts-->
